@@ -1,0 +1,295 @@
+/* =====================================
+ * ========== Styles généraux ==========
+ * ================================== */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body.hideScrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+body.hideScrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =================================================
+ * ========== Styles section présentation ==========
+ * ============================================== */
+
+section.superPatate-intro {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+}
+
+section.superPatate-intro > div {
+    height: 50%;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+div.superPatate-intro-section-title {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.superPatate-intro-title,
+.superPatate-intro-sousTitle {
+    width: 60%;
+    max-width: 1200px;
+    min-width: 600px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.superPatate-intro-title {
+    line-height: 6rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.superPatate-intro-sousTitle {
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.superPatate-intro-section-auteurs {
+    padding-top: 50px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.superPatate-intro-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+
+/* ==================================================
+ * ========== Styles section slider (menu) ==========
+ * =============================================== */
+
+.superPatate-nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.superPatate-nav li {
+    position: relative;
+}
+
+.superPatate-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.superPatate-nav a {
+    font-size: 1rem;
+}
+
+.superPatate-nav > ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.superPatate-nav ul li {
+    list-style-type: none;
+}
+
+.superPatate-nav ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+.superPatate-nav-auteur,
+.superPatate-nav-intro {
+    display: inline-block;
+}
+
+.superPatate-nav-auteur > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.superPatate-nav-auteur > a,
+.superPatate-nav-intro > a {
+    min-width: 200px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.superPatate-nav-page > a {
+    width: 180px;
+    padding: 10px;
+}
+
+.superPatate-nav-page {
+    position: relative;
+}
+
+.superPatate-nav-page > ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.superPatate-nav-slide a {
+    width: 180px;
+    padding: 10px;
+}
+
+
+/* === hovers === */
+
+.superPatate-nav-auteur > ul {
+    display: none;
+}
+
+.superPatate-nav-auteur:hover > ul {
+    display: block;
+}
+
+.superPatate-nav-page > ul {
+    display: none;
+}
+
+.superPatate-nav-page:hover > ul {
+    display: block;
+}
+
+
+/* ========== Colors ========== */
+
+.superPatate-nav {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+.superPatate-nav a {
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* ====================================================
+ * ========== Styles section slider (slides) ==========
+ * ================================================= */
+
+.superPatate-slider {
+    position: relative;
+}
+
+.superPatate-slides {
+    padding-top: 46px;
+}
+
+.superPatate-slides ul {
+    margin: 0;
+    padding: 0;
+}
+
+.superPatate-slides ul li {
+    list-style-type: none;
+}
+
+.superPatate-slide-page {
+    position: relative;
+}
+
+.superPatate-slide-page ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.superPatate-slide-auteur {
+    overflow: hidden;
+}
+
+.superPatate-slide-page,
+.superPatate-slide-page > ul,
+.superPatate-single-slide {
+    height: 100%;
+}
+
+.superPatate-single-slide div,
+body.hideScrollBar .superPatate-single-slide-desktop div div {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.superPatate-slides img {
+    width: 100%;
+    height: auto;
+}
+
+.superPatate-single-slide {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.superPatate-single-slide > div {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.superPatate-single-slide-desktop > div {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.superPatate-single-slide-tablette {
+    background-position: center 58px;
+}
+
+.superPatate-single-slide-tablette > div {
+    height: 1024px;
+    width: 768px;
+    left: 50%;
+    margin-top: 150px;
+    margin-left: -384px;
+}
+
+.superPatate-single-slide-mobile {
+    background-position: center 59px;
+}
+
+.superPatate-single-slide-mobile {
+    margin-bottom: 100px;
+}
+
+.superPatate-single-slide-mobile > div {
+    height: 568px;
+    width: 320px;
+    left: 50%;
+    margin-top: 150px;
+    margin-left: -160px;
+}
+
+.superPatate-single-slide div::-webkit-scrollbar {
+    display: none;
+}
+
+.superPatate-single-slide div::-webkit-scrollbar {
+    display: none;
+}
